@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #0077cc;
+            margin-top: 30px;
+            border-bottom: 2px solid #0077cc;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        ul, ol {
+            color: #666;
+        }
+        li {
+            margin: 10px 0;
+        }
+        button {
+            background: #0077cc;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+        .button-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        #output {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: none;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #0077cc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Webpage</h1>
+        <p>This webpage demonstrates basic HTML tags and interactive buttons.</p>
+
+        <h2>Introduction</h2>
+        <p>This is a paragraph tag showing basic text content. You can include multiple paragraphs to describe your content.</p>
+
+        <h2>Features List</h2>
+        <ul>
+            <li>Basic HTML Structure</li>
+            <li>Headings and Paragraphs</li>
+            <li>Lists (Ordered and Unordered)</li>
+            <li>Interactive Buttons</li>
+            <li>Tables for Data</li>
+        </ul>
+
+        <h2>Ordered List Example</h2>
+        <ol>
+            <li>First Step - Plan</li>
+            <li>Second Step - Design</li>
+            <li>Third Step - Develop</li>
+            <li>Fourth Step - Deploy</li>
+        </ol>
+
+        <h2>Sample Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Mahesh</td>
+                <td>Developer</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Manager</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>Designer</td>
+                <td>Active</td>
+            </tr>
+        </table>
+
+        <h2>Interactive Buttons</h2>
+        <div class="button-section">
+            <button onclick="showMessage()">Click Me!</button>
+            <button onclick="showAlert()">Show Alert</button>
+            <button onclick="changeColor()">Change Color</button>
+            <button onclick="resetPage()">Reset</button>
+        </div>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('output').style.display = 'block';
+            document.getElementById('output').innerHTML = '<strong>✓ Button Clicked Successfully!</strong> <br> This demonstrates that your HTML page and buttons are working perfectly!';
+            document.getElementById('output').style.background = '#e8f4f8';
+        }
+
+        function showAlert() {
+            alert('Alert Box Working! This is a basic JavaScript alert.');
+        }
+
+        function changeColor() {
+            document.getElementById('output').style.display = 'block';
+            document.getElementById('output').innerHTML = '<strong>✓ Color Changed!</strong> <br> The background color has been changed.';
+            document.getElementById('output').style.background = '#fff3cd';
+            document.getElementById('output').style.color = '#333';
+        }
+
+        function resetPage() {
+            document.getElementById('output').style.display = 'none';
+            document.getElementById('output').innerHTML = '';
+            alert('Page has been reset!');
+        }
+    </script>
+
+</body>
+</html>
