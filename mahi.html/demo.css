@@ -1,0 +1,38 @@
+{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(216, 248, 147);
+    border: 10px solid rgb(231, 111, 111);
+    border-radius: 10px;
+}
+h1{ 
+    color:red;
+    font-size: 50px;
+    transition: transform 0.5s ease-in-out;
+
+}
+h1:hover {
+    color:rgb(0, 0, 6);
+    transform: scale(1.2);
+}
+#A
+{
+    color:rgb(125, 5, 5);
+}
+#M1
+{
+    align-items: center;
+    color:rgb(185, 50, 95);
+    
+    
+}
+button{
+    background-color:rgb(167, 9, 9);
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    transition: transform 0.5s ease-in-out;
+}
